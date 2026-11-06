@@ -14,7 +14,7 @@ import com.vanavil.itinerary.service.PdfGeneratorService;
 
 @RestController 
 @RequestMapping("/api/itinerary")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {"http://localhost:5173" , "https://vanavil-itinerary-generator.vercel.app"} )
 public class ItineraryController {
     
 private final PdfGeneratorService pdfService;
