@@ -12,7 +12,7 @@ export default function App() {
     e.preventDefault();
     
     try {
-      const response = await fetch('http://localhost:8080/api/itinerary/generate', {
+      const response = await fetch('https://vanavil-backend.onrender.com/api/itinerary/generate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
